@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   clue_ok.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: johiew <johiew@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*   By: branlee <branlee@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/21 16:48:29 by johiew            #+#    #+#             */
-/*   Updated: 2026/06/21 16:48:31 by johiew           ###   ########.fr       */
+/*   Updated: 2026/07/23 21:54:21 by branlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	get_left(int *row, int size);
-int	get_right(int *col, int size);
+#include "rush01.h"
 
 int	row_clue_ok(int **grid, int row, int size, int clues[24])
 {
