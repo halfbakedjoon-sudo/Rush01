@@ -29,7 +29,8 @@ int	solve(int **grid, int size, int clues[24], int pos)
 	while (i <= size)
 	{
 		grid[row][col] = i;
-		if (check_row_duplicates(grid, row, size) && check_col_duplicates(grid, col, size))
+		if (check_row_duplicates(grid, row, size)
+			&& check_col_duplicates(grid, col, size))
 		{
 			if (col == (size - 1))
 			{

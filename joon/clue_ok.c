@@ -28,7 +28,7 @@ int	row_clue_ok(int **grid, int row, int size, int clues[24])
 
 int	col_clue_ok(int **grid, int col, int size, int clues[24])
 {
-	int	temp[size];
+	int	temp[6];
 	int	i;
 
 	i = 0;
