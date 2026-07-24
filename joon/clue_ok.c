@@ -30,7 +30,6 @@ int	col_clue_ok(int **grid, int col, int size, int clues[24])
 {
 	int	temp[size];
 	int	i;
-	int	j;
 
 	i = 0;
 	while (i < size)
