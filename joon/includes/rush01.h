@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef RUSH01_H
+# define RUSH01_H
+
 int		parse(int argc, char **argv, int clues[24]);
 int		**get_grid(int size);
 int		check_row_duplicates(int **grid, int row, int size);
@@ -24,3 +27,5 @@ void	free_grid(int **grid, int size);
 void	ft_putchar(char c);
 void	ft_putnbr(int n);
 int		check(char **input);
+
+#endif
