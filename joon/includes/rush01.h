@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <unistd.h>
-
 int		parse(int argc, char **argv, int clues[24]);
 int		**get_grid(int size);
 int		check_row_duplicates(int **grid, int row, int size);
@@ -26,4 +23,4 @@ void	printf_grid(int **grid, int size);
 void	free_grid(int **grid, int size);
 void	ft_putchar(char c);
 void	ft_putnbr(int n);
-int	check(char **input);
+int		check(char **input);
