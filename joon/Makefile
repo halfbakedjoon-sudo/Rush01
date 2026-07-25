@@ -29,19 +29,19 @@ INCLUDES	= -Iincludes
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CLAGS) $(OBJ) -o $(NAME)
+	@$(CC) $(CLAGS) $(OBJ) -o $(NAME)
 	echo "$(NAME) compiled successfully"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
-	mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	@mkdir -p $(dir $@)
+	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 clean:
-	rm -f $(OBJ_DIR)
+	@rm -rf $(OBJ_DIR)
 	echo "OBJ Removed"
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 	echo "$(NAME) Removed"
 
 re: fclean all
