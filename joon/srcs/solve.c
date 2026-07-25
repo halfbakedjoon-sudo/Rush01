@@ -12,19 +12,19 @@
 
 int	check_row_duplicates(int **grid, int row, int size);
 int	check_col_duplicates(int **grid, int col, int size);
-int	row_clue_ok(int **grid, int row, int size, int clues[24]);
-int	col_clue_ok(int **grid, int col, int size, int clues[24]);
+int	row_clue_ok(int **grid, int row, int size, int clues[16]);
+int	col_clue_ok(int **grid, int col, int size, int clues[16]);
 
-int	check_grid(int **grid, int row, int col, int clues[24])
+int	check_grid(int **grid, int row, int col, int clues[16])
 {
-	if (col == 6 - 1 && !row_clue_ok(grid, row, 6, clues))
+	if (col == 4 - 1 && !row_clue_ok(grid, row, 4, clues))
 		return (0);
-	if (row == 6 - 1 && !col_clue_ok(grid, col, 6, clues))
+	if (row == 4 - 1 && !col_clue_ok(grid, col, 4, clues))
 		return (0);
 	return (1);
 }
 
-int	solve(int **grid, int size, int clues[24], int pos)
+int	solve(int **grid, int size, int clues[16], int pos)
 {
 	int	row;
 	int	col;

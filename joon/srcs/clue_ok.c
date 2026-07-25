@@ -13,7 +13,7 @@
 int	get_left(int *row, int size);
 int	get_right(int *col, int size);
 
-int	row_clue_ok(int **grid, int row, int size, int clues[24])
+int	row_clue_ok(int **grid, int row, int size, int clues[16])
 {
 	if (get_left(grid[row], size) != clues[size * 2 + row])
 	{
@@ -26,9 +26,9 @@ int	row_clue_ok(int **grid, int row, int size, int clues[24])
 	return (1);
 }
 
-int	col_clue_ok(int **grid, int col, int size, int clues[24])
+int	col_clue_ok(int **grid, int col, int size, int clues[16])
 {
-	int	temp[6];
+	int	temp[9];
 	int	i;
 
 	i = 0;

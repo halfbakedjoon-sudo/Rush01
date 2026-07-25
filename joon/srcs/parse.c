@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	parse(int argc, char **argv, int clues[24])
+int	parse(int argc, char **argv, int clues[16])
 {
 	int	i;
 	int	j;
@@ -28,7 +28,7 @@ int	parse(int argc, char **argv, int clues[24])
 		}
 		i++;
 	}
-	if (j != 24)
+	if (j != 16)
 	{
 		return (1);
 	}

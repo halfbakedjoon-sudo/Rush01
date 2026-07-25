@@ -17,7 +17,7 @@
 
 int	main(int argc, char **argv)
 {
-	int	clues[24];
+	int	clues[16];
 	int	size;
 	int	**grid;
 
@@ -29,7 +29,7 @@ int	main(int argc, char **argv)
 		return (printf("expected number but not\n"));
 	if (check(argv) == 2)
 		return (printf("expected space but not\n"));
-	size = 6;
+	size = 4;
 	parse (argc, argv, clues);
 	grid = get_grid(size);
 	if (solve(grid, size, clues, 0) == 1)
