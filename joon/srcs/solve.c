@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   solve.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: johiew <johiew@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*   By: branlee <branlee@student.42kl.edu.my>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/21 18:10:36 by johiew            #+#    #+#             */
-/*   Updated: 2026/06/21 18:10:38 by johiew           ###   ########.fr       */
+/*   Updated: 2026/07/25 10:06:39 by branlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	check_row_duplicates(int **grid, int row, int size);
-int	check_col_duplicates(int **grid, int col, int size);
-int	row_clue_ok(int **grid, int row, int size, int clues[16]);
-int	col_clue_ok(int **grid, int col, int size, int clues[16]);
+#include "rush01.h"
 
 int	check_grid(int **grid, int row, int col, int clues[16])
 {
